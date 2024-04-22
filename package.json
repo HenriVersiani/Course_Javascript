@@ -1,0 +1,21 @@
+{
+  "name": "course_javascript",
+  "version": "1.0.0",
+  "description": "* [ ]  1.Tipos de dados * [ ]  2.Condições * [ ]  3.Repetições * [ ]  4.Funções * [ ]  5.JsDom",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenriVersiani/Course_Javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenriVersiani/Course_Javascript/issues"
+  },
+  "homepage": "https://github.com/HenriVersiani/Course_Javascript#readme"
+}
