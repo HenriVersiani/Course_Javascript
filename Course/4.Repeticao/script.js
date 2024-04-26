@@ -60,3 +60,25 @@ const namesWestern = dataTeams.filter((e, i) => e.conference === "Western Confer
 
 
 
+const dispesas = [
+    {
+        dispesa: "Energia",
+        valor: 200
+    },
+    {
+        dispesa: "Internet",
+        valor: 80
+    },
+    {
+        dispesa: "Comida",
+        valor: 2000
+    },
+    {
+        dispesa: "Outros",
+        valor: 500
+    }
+];
+
+const dispesaTotal = dispesas.reduce((accumulator, current) =>  accumulator + current.valor, 0);
+
+console.log(dispesaTotal);
