@@ -53,10 +53,8 @@ const names = dataTeams.map((e, i) => e.name);
 
 
 // O MAP vai criar um novo array de nomes
-const namesWestern = dataTeams.filter((e, i) => e.conference === "Western Conference")
-    .map(x => x.name).forEach(y => {
-        console.log(y)
-    });
-
+const namesWestern = dataTeams.filter((e, i) => e.conference === "Eastern Conference")
+.map((e) => e.name)
+console.log(namesWestern)
 
 
