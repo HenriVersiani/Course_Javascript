@@ -4,20 +4,20 @@ const arrStrings = ["Alberto", "ALBERTO", "alberto", "Henri", "HENRIQUE"];
 // 1. Criar um novo array com map e fazer o dobro de cada numero do array arrNumeros
 
 const numDobrados = arrNumeros.map((e)=> e * 2)
-console.log(numDobrados)
+// console.log(numDobrados)
 // 2. Criar um novo array com map e transformar cada string de arrStrings em strings com todas as letras minúsculas
 // procurar sobre o método .toLowerCase()
 
 const allLowerCase = arrStrings.map((e) => e.toLowerCase())
-console.log(allLowerCase)
+// console.log(allLowerCase)
 
 // 3. Com forEach dizer se o numero do arrNumeros é par ou é impar
 
 arrNumeros.forEach((e) => {
     if(e % 2 === 0){
-        console.log(`O número ${e} é par`)
+       // console.log(`O número ${e} é par`)
     }else{
-        console.log(`O número ${e} é ímpar`)
+       // console.log(`O número ${e} é ímpar`)
     }
 });
 
@@ -25,7 +25,7 @@ arrNumeros.forEach((e) => {
 // procurar sobre o método includes()
 
 const stringNumber = arrNumeros.map((e) => e.toString() )
-//console.log(stringNumber)
+// console.log(stringNumber)
 const includesNumberOne = stringNumber.filter((e) => e.includes('1'))
 console.log(includesNumberOne) 
 
