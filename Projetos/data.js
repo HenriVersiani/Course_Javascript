@@ -1,4 +1,4 @@
-const dataWestern = [
+export const dataWestern = [
     {
         "id": 1,
         "team": "Los Angeles Lakers",
@@ -121,7 +121,7 @@ const dataWestern = [
     }
 ];
 
-const dataEastern = [
+export const dataEastern = [
     {
         "id": 16,
         "team": "Celtics",
