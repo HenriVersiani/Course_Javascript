@@ -243,3 +243,6 @@ export const dataEastern = [
         "imgLogo": "https://ssl.gstatic.com/onebox/media/sports/logos/NBkMJapxft4V5kvufec4Jg_48x48.png"
     }
 ];
+
+export const rankingWestern = dataWestern.sort((x, y) => y.win - x.win);
+export const rakingEastern = dataEastern.sort((x, y) => y.win - x.win);
