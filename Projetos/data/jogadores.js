@@ -1,342 +1,342 @@
-const jogadoresWestern = [
+export const playersWestern = [
     {
         "id": 1,
-        "time": "Los Angeles Lakers",
-        "jogadores": [
+        "team": "Los Angeles Lakers",
+        "players": [
             {
-                "nome": "LeBron James",
+                "name": "LeBron James",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Anthony Davis",
+                "name": "Anthony Davis",
                 "img": "url_da_imagem",
-                "posicao": "Ala Pivo"
+                "position": "Ala Pivo"
             },
             {
-                "nome": "Russell Westbrook",
+                "name": "Russell Westbrook",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Carmelo Anthony",
+                "name": "Carmelo Anthony",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Malcolm Brogdon",
+                "name": "Malcolm Brogdon",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             }
         ]
     },
     {
         "id": 2,
-        "time": "Golden State Warriors",
-        "jogadores": [
+        "team": "Golden State Warriors",
+        "players": [
             {
-                "nome": "Stephen Curry",
+                "name": "Stephen Curry",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Klay Thompson",
+                "name": "Klay Thompson",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Draymond Green",
+                "name": "Draymond Green",
                 "img": "url_da_imagem",
-                "posicao": "Ala Pivo"
+                "position": "Ala Pivo"
             },
             {
-                "nome": "Andrew Wiggins",
+                "name": "Andrew Wiggins",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Kevon Looney",
+                "name": "Kevon Looney",
                 "img": "url_da_imagem",
-                "posicao": "Pivo"
+                "position": "Pivo"
             }
         ]
     },
     {
         "id": 3,
-        "time": "Denver Nuggets",
-        "jogadores": [
+        "team": "Denver Nuggets",
+        "players": [
             {
-                "nome": "Nikola Jokic",
+                "name": "Nikola Jokic",
                 "img": "url_da_imagem",
-                "posicao": "Pivo"
+                "position": "Pivo"
             },
             {
-                "nome": "Jamal Murray",
+                "name": "Jamal Murray",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Aaron Gordon",
+                "name": "Aaron Gordon",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Michael Porter Jr.",
+                "name": "Michael Porter Jr.",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Monte Morris",
+                "name": "Monte Morris",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             }
         ]
     },
     {
         "id": 4,
-        "time": "Utah Jazz",
-        "jogadores": [
+        "team": "Utah Jazz",
+        "players": [
             {
-                "nome": "Donovan Mitchell",
+                "name": "Donovan Mitchell",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Rudy Gobert",
+                "name": "Rudy Gobert",
                 "img": "url_da_imagem",
-                "posicao": "Pivo"
+                "position": "Pivo"
             },
             {
-                "nome": "Mike Conley",
+                "name": "Mike Conley",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Bojan Bogdanovic",
+                "name": "Bojan Bogdanovic",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Jordan Clarkson",
+                "name": "Jordan Clarkson",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             }
         ]
     },
     {
         "id": 5,
-        "time": "Phoenix Suns",
-        "jogadores": [
+        "team": "Phoenix Suns",
+        "players": [
             {
-                "nome": "Devin Booker",
+                "name": "Devin Booker",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Chris Paul",
+                "name": "Chris Paul",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Deandre Ayton",
+                "name": "Deandre Ayton",
                 "img": "url_da_imagem",
-                "posicao": "Pivo"
+                "position": "Pivo"
             },
             {
-                "nome": "Mikal Bridges",
+                "name": "Mikal Bridges",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Jae Crowder",
+                "name": "Jae Crowder",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             }
         ]
     },
     {
         "id": 6,
-        "time": "Portland Trail Blazers",
-        "jogadores": [
+        "team": "Portland Trail Blazers",
+        "players": [
             {
-                "nome": "Damian Lillard",
+                "name": "Damian Lillard",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "CJ McCollum",
+                "name": "CJ McCollum",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Norman Powell",
+                "name": "Norman Powell",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Robert Covington",
+                "name": "Robert Covington",
                 "img": "url_da_imagem",
-                "posicao": "Ala Pivo"
+                "position": "Ala Pivo"
             },
             {
-                "nome": "Jusuf Nurkic",
+                "name": "Jusuf Nurkic",
                 "img": "url_da_imagem",
-                "posicao": "Pivo"
+                "position": "Pivo"
             }
         ]
     },
     {
         "id": 7,
-        "time": "Dallas Mavericks",
-        "jogadores": [
+        "team": "Dallas Mavericks",
+        "players": [
             {
-                "nome": "Luka Doncic",
+                "name": "Luka Doncic",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Kristaps Porzingis",
+                "name": "Kristaps Porzingis",
                 "img": "url_da_imagem",
-                "posicao": "Ala Pivo"
+                "position": "Ala Pivo"
             },
             {
-                "nome": "Tim Hardaway Jr.",
+                "name": "Tim Hardaway Jr.",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Dorian Finney-Smith",
+                "name": "Dorian Finney-Smith",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Jalen Brunson",
+                "name": "Jalen Brunson",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             }
         ]
     },
     {
         "id": 8,
-        "time": "Memphis Grizzlies",
-        "jogadores": [
+        "team": "Memphis Grizzlies",
+        "players": [
             {
-                "nome": "Ja Morant",
+                "name": "Ja Morant",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Jaren Jackson Jr.",
+                "name": "Jaren Jackson Jr.",
                 "img": "url_da_imagem",
-                "posicao": "Ala Pivo"
+                "position": "Ala Pivo"
             },
             {
-                "nome": "Dillon Brooks",
+                "name": "Dillon Brooks",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Steven Adams",
+                "name": "Steven Adams",
                 "img": "url_da_imagem",
-                "posicao": "Pivo"
+                "position": "Pivo"
             },
             {
-                "nome": "Desmond Bane",
+                "name": "Desmond Bane",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             }
         ]
     },
     {
         "id": 9,
-        "time": "New Orleans Pelicans",
-        "jogadores": [
+        "team": "New Orleans Pelicans",
+        "players": [
             {
-                "nome": "Zion Williamson",
+                "name": "Zion Williamson",
                 "img": "url_da_imagem",
-                "posicao": "Ala Pivo"
+                "position": "Ala Pivo"
             },
             {
-                "nome": "Brandon Ingram",
+                "name": "Brandon Ingram",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Jonas Valanciunas",
+                "name": "Jonas Valanciunas",
                 "img": "url_da_imagem",
-                "posicao": "Pivo"
+                "position": "Pivo"
             },
             {
-                "nome": "Devonte' Graham",
+                "name": "Devonte' Graham",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Josh Hart",
+                "name": "Josh Hart",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             }
         ]
     },
     {
         "id": 10,
-        "time": "Minnesota Timberwolves",
-        "jogadores": [
+        "team": "Minnesota Timberwolves",
+        "players": [
             {
-                "nome": "Karl-Anthony Towns",
+                "name": "Karl-Anthony Towns",
                 "img": "url_da_imagem",
-                "posicao": "Pivo"
+                "position": "Pivo"
             },
             {
-                "nome": "Anthony Edwards",
+                "name": "Anthony Edwards",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "D'Angelo Russell",
+                "name": "D'Angelo Russell",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Malik Beasley",
+                "name": "Malik Beasley",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Jarrett Culver",
+                "name": "Jarrett Culver",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             }
         ]
     },
     {
         "id": 11,
-        "time": "Sacramento Kings",
-        "jogadores": [
+        "team": "Sacramento Kings",
+        "players": [
             {
-                "nome": "De'Aaron Fox",
+                "name": "De'Aaron Fox",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Tyrese Haliburton",
+                "name": "Tyrese Haliburton",
                 "img": "url_da_imagem",
-                "posicao": "Armador"
+                "position": "Armador"
             },
             {
-                "nome": "Harrison Barnes",
+                "name": "Harrison Barnes",
                 "img": "url_da_imagem",
-                "posicao": "Ala"
+                "position": "Ala"
             },
             {
-                "nome": "Domantas Sabonis",
+                "name": "Domantas Sabonis",
                 "img": "url_da_imagem",
-                "posicao": "Ala Pivo"
+                "position": "Ala Pivo"
             },
             {
-                "nome": "Richaun Holmes",
+                "name": "Richaun Holmes",
                 "img": "url_da_imagem",
-                "posicao": "Pivo"
+                "position": "Pivo"
             }
         ]
     }     

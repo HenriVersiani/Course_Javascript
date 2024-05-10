@@ -7,10 +7,21 @@ const tdbodyConference = document.getElementById('tbody-conference');
 const btnWestern = document.getElementById('btn-western');
 const btnEastern = document.getElementById('btn-eastern');
 
+let trTeam = null;
+
 // Eventos
 window.addEventListener('load', () => {
     // Chamadas
     handleCreateTable(tdbodyConference, rankingWestern);
+    trTeam = document.querySelectorAll('.tr-team');
+
+    trTeam.forEach((element, index) => {
+        element.addEventListener('click', ({ target }) => {
+            const name = rankingWestern[index].team;
+            window.location.href = `./pages/team/?name=${name}`
+        });
+    });
+
 });
 
 btnWestern.addEventListener('click', (event) => {
