@@ -1,6 +1,5 @@
 export const playersWestern = [
     {
-        "id": 1,
         "team": "Los Angeles Lakers",
         "players": [
             {
@@ -31,7 +30,6 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 2,
         "team": "Golden State Warriors",
         "players": [
             {
@@ -62,7 +60,6 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 3,
         "team": "Denver Nuggets",
         "players": [
             {
@@ -93,7 +90,6 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 4,
         "team": "Utah Jazz",
         "players": [
             {
@@ -124,7 +120,6 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 5,
         "team": "Phoenix Suns",
         "players": [
             {
@@ -155,7 +150,6 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 6,
         "team": "Portland Trail Blazers",
         "players": [
             {
@@ -186,7 +180,6 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 7,
         "team": "Dallas Mavericks",
         "players": [
             {
@@ -217,7 +210,6 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 8,
         "team": "Memphis Grizzlies",
         "players": [
             {
@@ -248,7 +240,6 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 9,
         "team": "New Orleans Pelicans",
         "players": [
             {
@@ -279,7 +270,7 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 10,
+
         "team": "Minnesota Timberwolves",
         "players": [
             {
@@ -310,7 +301,7 @@ export const playersWestern = [
         ]
     },
     {
-        "id": 11,
+
         "team": "Sacramento Kings",
         "players": [
             {
@@ -339,5 +330,5 @@ export const playersWestern = [
                 "position": "Pivo"
             }
         ]
-    }     
+    }
 ];

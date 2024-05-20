@@ -15,15 +15,12 @@ export function handleCreateTable(tbody, data) {
 
 export function handleCreateTablePlayers(tbody, data) {
     tbody.innerHTML = '';
-    console.log(tbody, data[0].players)
-    return data[0].players.forEach((element, index) => {
+    return data.forEach((element, index) => {
         tbody.innerHTML += `
         <tr>
-
-            <td class="d-flex justify-content-around">
-                <div> ${element.img}</div>
-                <div>${element.name}</div>
-            </td>
+            <td class="">${element.img}</td>
+            <td class="">${element.name}</td>
+            <td class="">${element.position}</td>
         </tr>
         `;
     });

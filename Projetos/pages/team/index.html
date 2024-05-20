@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,8 @@
                 <div class="nav row p-2 align-items-center">
                     <div class="col justify-content-start">
                         <h2>
-                            <img class="logo" src="https://logodownload.org/wp-content/uploads/2016/11/nba-logo-11.png" alt="">
+                            <img class="logo" src="https://logodownload.org/wp-content/uploads/2016/11/nba-logo-11.png"
+                                alt="">
                         </h2>
                     </div>
                     <div class="col d-flex justify-content-end">
@@ -41,16 +43,19 @@
     </header>
 
     <main>
-        <h1 class="team-name"></h1>
-        <table class="table table-responsive">
-            <thead class="table-primary">
-                <th>Imagem</th>
-                <th>info</th>
-            </thead>
-            <tbody id="tbody-player">
-                <!-- VAI RECEBER ELEMENTOS DINAMICOS AQUI DENTRO -->
-            </tbody>
-        </table>
+        <div class="container">
+            <h1 class="team-name" id="title"></h1>
+            <table class="table table-responsive">
+                <thead class="table-primary">
+                    <th>Imagem</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                </thead>
+                <tbody id="tbody-player">
+                    <!-- VAI RECEBER ELEMENTOS DINAMICOS AQUI DENTRO -->
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <footer>
@@ -59,4 +64,5 @@
 
     <script type="module" src="script.js"></script>
 </body>
+
 </html>
