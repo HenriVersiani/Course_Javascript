@@ -17,8 +17,8 @@ window.addEventListener('load', () => {
 
     trTeam.forEach((element, index) => {
         element.addEventListener('click', ({ target }) => {
-            const name = rankingWestern[index].team;
-            window.location.href = `./pages/team/?name=${name}`
+            const id = rankingWestern[index].id;
+            window.location.href = `./pages/team/?id=${id}`
         });
     });
 
