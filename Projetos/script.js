@@ -1,6 +1,7 @@
 // IMPORTAÇÕES
 import { rankingWestern, rakingEastern } from "./data/data.js";
 import { handleCreateTable } from "./scripts/createTable.js";
+import { listConferencePlayers } from "./scripts/listConferencePlayers.js";
 
 // Seletores
 const tdbodyConference = document.getElementById('tbody-conference');
@@ -13,24 +14,21 @@ let trTeam = null;
 window.addEventListener('load', () => {
     // Chamadas
     handleCreateTable(tdbodyConference, rankingWestern);
-    trTeam = document.querySelectorAll('.tr-team');
-
-    trTeam.forEach((element, index) => {
-        element.addEventListener('click', ({ target }) => {
-            const name = rankingWestern[index].team;
-            window.location.href = `./pages/team/?name=${name}`
-        });
-    });
-
+    trTeam = document.querySelectorAll('.tr-team'); 
+    listConferencePlayers(trTeam, rankingWestern)
 });
 
 btnWestern.addEventListener('click', (event) => {
     event.preventDefault();
     handleCreateTable(tdbodyConference, rankingWestern);
+    trTeam = document.querySelectorAll('.tr-team'); 
+    listConferencePlayers(trTeam, rankingWestern)
 });
 
 // EVENTO de CLICK
 btnEastern.addEventListener('click', (event) => {
     event.preventDefault();
     handleCreateTable(tdbodyConference, rakingEastern);
+    trTeam = document.querySelectorAll('.tr-team');
+    listConferencePlayers(trTeam, rakingEastern)
 });

@@ -9,8 +9,6 @@ const nameTeam = param.get('name');
 
 const findTeam = playersWestern.find(team => team.team == nameTeam)
 
-console.log(findTeam)
-
 if(findTeam){
     teamTitle.innerHTML = findTeam.team
     handleCreateTablePlayers(tbodyPlayer, findTeam.players)

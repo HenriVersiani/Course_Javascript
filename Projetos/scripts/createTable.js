@@ -15,7 +15,7 @@ export function handleCreateTable(tbody, data) {
 
 export function handleCreateTablePlayers(tbody, data) {
     tbody.innerHTML = '';
-    return data.forEach((element, index) => {
+    return data.forEach((element) => {
         tbody.innerHTML += `
         <tr>
             <td class="">${element.img}</td>
