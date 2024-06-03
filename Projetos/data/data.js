@@ -124,7 +124,7 @@ export const dataWestern = [
 export const dataEastern = [
     {
         "id": 16,
-        "team": "Celtics",
+        "team": "Boston Celtics",
         "conference": "Eastern",
         "win": 64,
         "loss": 18,
@@ -132,7 +132,7 @@ export const dataEastern = [
     },
     {
         "id": 17,
-        "team": "Bucks",
+        "team": "Milwaukee Bucks",
         "conference": "Eastern",
         "win": 49,
         "loss": 33,
@@ -140,7 +140,7 @@ export const dataEastern = [
     },
     {
         "id": 18,
-        "team": "76ers",
+        "team": "Philadelphia 76ers",
         "conference": "Eastern",
         "win": 47,
         "loss": 35,
@@ -148,7 +148,7 @@ export const dataEastern = [
     },
     {
         "id": 19,
-        "team": "Nets",
+        "team": "Brooklyn Nets",
         "conference": "Eastern",
         "win": 32,
         "loss": 50,
@@ -156,7 +156,7 @@ export const dataEastern = [
     },
     {
         "id": 20,
-        "team": "Heat",
+        "team": "Miami Heat",
         "conference": "Eastern",
         "win": 46,
         "loss": 36,
@@ -164,7 +164,7 @@ export const dataEastern = [
     },
     {
         "id": 21,
-        "team": "Knicks",
+        "team": "New York Knicks",
         "conference": "Eastern",
         "win": 50,
         "loss": 32,
@@ -172,7 +172,7 @@ export const dataEastern = [
     },
     {
         "id": 22,
-        "team": "Hawks",
+        "team": "Atlanta Hawks",
         "conference": "Eastern",
         "win": 36,
         "loss": 46,
@@ -180,7 +180,7 @@ export const dataEastern = [
     },
     {
         "id": 23,
-        "team": "Hornets",
+        "team": "Charlotte Hornets",
         "conference": "Eastern",
         "win": 21,
         "loss": 61,
@@ -188,7 +188,7 @@ export const dataEastern = [
     },
     {
         "id": 24,
-        "team": "Bulls",
+        "team": "Chicago Bulls",
         "conference": "Eastern",
         "win": 39,
         "loss": 43,
@@ -212,7 +212,7 @@ export const dataEastern = [
     },
     {
         "id": 27,
-        "team": "Pacers",
+        "team": "Indiana Pacers",
         "conference": "Eastern",
         "win": 47,
         "loss": 35,
@@ -220,7 +220,7 @@ export const dataEastern = [
     },
     {
         "id": 28,
-        "team": "Magic",
+        "team": "Orlando Magic",
         "conference": "Eastern",
         "win": 47,
         "loss": 35,
@@ -228,7 +228,7 @@ export const dataEastern = [
     },
     {
         "id": 29,
-        "team": "Raptors",
+        "team": "Toronto Raptors",
         "conference": "Eastern",
         "win": 27,
         "loss": 57,
@@ -236,7 +236,7 @@ export const dataEastern = [
     },
     {
         "id": 30,
-        "team": "Wizards",
+        "team": "Washington Wizards",
         "conference": "Eastern",
         "win": 15,
         "loss": 67,
