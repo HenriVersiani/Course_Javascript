@@ -1,7 +1,7 @@
 // IMPORTAÇÕES
-import { rankingWestern, rakingEastern } from "./data/data.js";
-import { handleCreateTable } from "./scripts/createTable.js";
-import { listConferencePlayers } from "./scripts/listConferencePlayers.js";
+import { rankingWestern, rakingEastern } from "./src/data/data.js";
+import { handleCreateTable } from "./src/scripts/createTable.js";
+import { listConferencePlayers } from "./src/scripts/listConferencePlayers.js";
 
 // Seletores
 const tdbodyConference = document.getElementById('tbody-conference');
