@@ -1,4 +1,5 @@
 import { fetchAllTeams, getTeamById } from "../../services/fetchApi.js";
+import { mock } from "../../services/mock.js";
 
 // async function main(){
 //     // const allTeams = await fetchAllTeams();
@@ -10,13 +11,23 @@ import { fetchAllTeams, getTeamById } from "../../services/fetchApi.js";
 //     // console.log(AllIdTeams)
 // }
 
-function createListTeams(array) {
-    // Essa vai ser sua TAREFA
+const tbodyTeams = document.getElementById('tbody-teams');
+
+export function createListTeams(tbody, data) {
+    return data.forEach((element) => {
+        tbody.innerHTML += `
+        <tr>
+            <td class="">${element.team}</td>
+        </tr>
+        `;
+    });
 };
 
 
 window.addEventListener('load', async () => {
-    const allTeams = await fetchAllTeams();
+    const allTeams = mock;
+
+
     const listAllTeams = allTeams.standings[8].rows.map(e => (
         {
             id: e.team.id,
@@ -24,6 +35,5 @@ window.addEventListener('load', async () => {
             slug: e.team.slug
         }
     ));
-
-
+    createListTeams(tbodyTeams, listAllTeams)
 });

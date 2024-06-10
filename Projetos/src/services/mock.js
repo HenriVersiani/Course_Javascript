@@ -1,4 +1,4 @@
-const mock1 = {
+export const mock = {
     "standings": [
         {
             "tournament": {
