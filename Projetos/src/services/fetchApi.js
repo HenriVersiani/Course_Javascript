@@ -6,7 +6,7 @@ const options = {
     }
 };
 
-export async function getAllTeams() {
+export async function fetchAllTeams() {
     const endpoint = 'https://basketapi1.p.rapidapi.com/api/basketball/tournament/132/season/38191/standings/total';
 
     try {
