@@ -12,28 +12,49 @@ import { mock } from "../../services/mock.js";
 // }
 
 const tbodyTeams = document.getElementById('tbody-teams');
+let allTeams = null
 
 export function createListTeams(tbody, data) {
+    tbody.innerHTML = '';
     return data.forEach((element) => {
         tbody.innerHTML += `
-        <tr>
-            <td class="">${element.team}</td>
-        </tr>
+        <div class="col-lg-6 col-12">
+            <h5 class="p-4">${element.team}</h5>
+        </div>
         `;
     });
 };
 
 
 window.addEventListener('load', async () => {
-    const allTeams = mock;
 
+    if(allTeams === null){
+        tbodyTeams.innerHTML = `
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>`
+    }
 
-    const listAllTeams = allTeams.standings[8].rows.map(e => (
+    allTeams = await fetchAllTeams()
+
+    if (allTeams.standings) {
+        const listAllTeams = allTeams.standings[8].rows.map(e => (
+            {
+                id: e.team.id,
+                team: e.team.name,
+                slug: e.team.slug
+            }
+        ));
+        return createListTeams(tbodyTeams, listAllTeams)
+    }
+
+    const listAllMockTeams = mock.standings[8].rows.map(e => (
         {
             id: e.team.id,
             team: e.team.name,
             slug: e.team.slug
         }
     ));
-    createListTeams(tbodyTeams, listAllTeams)
+    return createListTeams(tbodyTeams, listAllMockTeams)
 });
+

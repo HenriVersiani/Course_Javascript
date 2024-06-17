@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Western Transfer</title>
+    <title>Mercado de Transferências</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <div id="container">
+
+    <header class="bg-secondary">
+        <div class="container mb-5">
+            <div>
+                <div class="nav row p-2 align-items-center">
+                    <div class="col justify-content-start">
+                        <h2>
+                            <img class="logo" src="https://logodownload.org/wp-content/uploads/2016/11/nba-logo-11.png" alt="">
+                        </h2>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <nav class="nav nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold active" aria-current="page"
+                                    href="../../../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="../transfer_market/index.html">Mercado de Transferência</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white disabled" href="#">disabled</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold disabled" href="pages/contato/index.html">Contato</a>
+                            </li>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<body>
+    <div class="container">
         <div id="div-icons-teams">
             imagem
         </div>
 
-        <table class="table table-responsive">
-            <thead class="table-primary">
-                <th>Teams</th>
-            </thead>
-            <tbody id="tbody-teams">
-                <!-- VAI RECEBER ELEMENTOS DINAMICOS AQUI DENTRO -->
-            </tbody>
-        </table>
-    </div>
+        <div id="tbody-teams" class="row">
+            <!-- VAI RECEBER ELEMENTOS DINAMICOS AQUI DENTRO -->
+        </div>
 
+    </div>
     <script type="module" src="script.js"></script>
 </body>
+
+<footer>
+        <ul id="info">
+            <li>Projeto criado por Henrique Versiani</li>
+            <li>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/henrique-versiani/">Henrique Versiani</a></li>
+            <li>Instagram: <a target="_blank" href="https://www.instagram.com/henriversianigolf/">@henriversianigolf</a></li>
+        </ul>
+</footer>
 
 </html>
