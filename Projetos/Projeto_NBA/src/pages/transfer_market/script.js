@@ -1,6 +1,6 @@
 import { fetchAllTeams, getTeamById } from "../../services/fetchApi.js";
 import { mock } from "../../services/mock.js";
-
+import { teamImages } from "../../data/data.js";
 // async function main(){
 //     // const allTeams = await fetchAllTeams();
 //     // const result2 = await getTeamById(3415);
@@ -12,14 +12,18 @@ import { mock } from "../../services/mock.js";
 // }
 
 const tbodyTeams = document.getElementById('tbody-teams');
+
 let allTeams = null
 
 export function createListTeams(tbody, data) {
     tbody.innerHTML = '';
-    return data.forEach((element) => {
+    return data.forEach((element, index) => {
         tbody.innerHTML += `
-        <div class="col-lg-6 col-12">
-            <h5 class="p-4">${element.team}</h5>
+        <div id="" class="col-lg-6 col-12">
+            <div class="card-team" onmouseover="this.style.backgroundColor='${element.color}'" onmouseout="this.style.backgroundColor='#b3b3b3f5'" >
+                <img class="img-fluid" src='${teamImages[index]}'/>
+                <h5 class="p-4">${element.team}</h5>
+            </div>
         </div>
         `;
     });
@@ -30,7 +34,7 @@ window.addEventListener('load', async () => {
 
     if(allTeams === null){
         tbodyTeams.innerHTML = `
-        <div class="spinner-border text-primary" role="status">
+        <div class="spinner-border text-primary" role="status" >
             <span class="visually-hidden">Loading...</span>
         </div>`
     }
@@ -42,9 +46,12 @@ window.addEventListener('load', async () => {
             {
                 id: e.team.id,
                 team: e.team.name,
-                slug: e.team.slug
+                slug: e.team.slug,
+                color: e.team.teamColors.primary
             }
         ));
+        console.log(allTeams)
+
         return createListTeams(tbodyTeams, listAllTeams)
     }
 
@@ -52,9 +59,12 @@ window.addEventListener('load', async () => {
         {
             id: e.team.id,
             team: e.team.name,
-            slug: e.team.slug
+            slug: e.team.slug,
+            color: e.team.teamColors.primary
         }
     ));
     return createListTeams(tbodyTeams, listAllMockTeams)
 });
+
+
 

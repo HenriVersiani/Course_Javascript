@@ -1,0 +1,41 @@
+.logo {
+    width: 55px;
+}
+
+body{
+    background-color: #EDEDED;
+}
+
+.card-team{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 10px;
+    height: 70px;
+    padding: 5px;
+    align-items: center;
+    background-color: #b3b3b3f5;
+}
+
+.card-team:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(163, 194, 239);
+    padding: 15px;
+    margin-top: 60px;
+    border-top: 4px solid rgb(115, 115, 201);
+}
+
+#info{
+   display: flex ;
+   justify-content: space-evenly;
+   margin: 0px;
+   padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}

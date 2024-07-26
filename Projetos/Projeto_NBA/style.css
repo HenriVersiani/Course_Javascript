@@ -1,19 +1,18 @@
 .logo {
-    width: 100px;
+    width: 55px;
 }
 
-h5{
-    display: flex;
-    justify-content: center;
-    border: 2px solid lightgrey;
-    border-radius: 10px;
-}
-
-h5:hover{
+.tr-team td:hover {
     background-color: rgb(163, 194, 239);
+    zoom: 1.07;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     cursor: pointer;
 }
 
+
+#ok{
+    display: flex;
+}
 footer{
     background-color: rgb(163, 194, 239);
     padding: 15px;
@@ -28,7 +27,6 @@ footer{
    padding: 10px;
 }
 
-a{
-    text-decoration: none;
-    color: blue;
+body{
+background-color: #EDEDED;
 }

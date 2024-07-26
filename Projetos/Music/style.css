@@ -1,0 +1,96 @@
+.logIn-button{
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    height: 45px;
+}
+
+.signIn-button{
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    height: 45px;
+    background-color:#212121;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.img-fluid{
+    border-radius: 15px;
+}
+
+.logo{
+    width: 150px;
+}
+.spotify-logo{
+    padding-left: 2rem;
+    width: 160px;
+    border-radius: 15px;
+}
+
+body{
+    background-color: #121212;
+    color: white;
+}
+
+.card{
+    background-color: #121212;
+    color: white;
+}
+
+.card:hover{
+    background-color: #212121;
+    border-radius: 10px;
+    transition: 0.4s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.img-30{
+    width: 30px;
+}
+
+li,a{
+    display:flex;
+    align-items: center;
+    color: lightgray;
+    text-decoration: none;
+    gap: 10px;
+    font-size: 20px;
+}
+
+a:hover{
+    color: white;
+}
+
+.ul-logo{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#personal{
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    padding-left: 2rem;
+    font-size: 20px;
+    text-decoration: none;
+    color: lightgray;
+}
+
+section:hover{
+    color: white;
+    cursor: pointer;
+}
