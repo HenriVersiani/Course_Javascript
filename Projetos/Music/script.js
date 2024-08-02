@@ -23,13 +23,11 @@ if (albums === null) {
     ` 
 }
 
-function handleClick(id){
-    console.log(id)
+function handleClick(event, id){
+    
 }
 
 async function main() {
-
-    window.handleClick = handleClick
 
     artists = await getArtists()
     albums = await getAlbums()
@@ -39,23 +37,18 @@ async function main() {
 
     artists.forEach(element => {
         const id = element.artists[0].id
-        divArtists.innerHTML += `
-        <div name="${id}" class="handleClick card col-sm-12 col-md-4 col-lg-2">
-            <img class="img-fluid" src="${element.artists[0].images[1].url}"/>
+      
+        const divsArtists = document.createElement('div')
+        divsArtists.className = "card col-sm-12 col-md-4 col-lg-2"
+
+        divsArtists.addEventListener('click', (event) => handleClick(event, id))
+        divsArtists.innerHTML += `
+            <img class=" img-fluid" src="${element.artists[0].images[1].url}"/>
             <h3>${element.artists[0].name}</h3>
-        </div>
-            `
+        `
+        divArtists.appendChild(divsArtists)
         }
      )
-
-    const divsArtists = document.querySelectorAll(".handleClick");
-
-    divsArtists.forEach((element) => {
-        element.addEventListener("click", () =>{
-        const id = element.getAttribute("name")    
-            alert(id)
-        })
-    })
 
     albums.map(element => divAlbums.innerHTML += `
         <div class="card col-sm-12 col-md-4 col-lg-2">
