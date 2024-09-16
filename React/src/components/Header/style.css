@@ -1,0 +1,20 @@
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: black 2px solid;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.pesquisa{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lupa{
+
+}
