@@ -7,3 +7,7 @@
 .card{
     background-color: lightgray;
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
-import { fetchApi } from "../../services/fetchApi"
+import { fetchTvs } from "../../services/fetchApi"
 
 
 function Home() {
@@ -12,11 +12,12 @@ function Home() {
   useEffect(() =>{
 
     async function getResult() {
-      const result = await fetchApi()
+      const result = await fetchTvs()
       setDestaque(result.results.filter((element) => element.listing_type_id === 'gold_special').slice(0,4))
-    //  console.log(result.results.filter((element) => element.listing_type_id === 'gold_special').slice(0,4))
+     // console.log(result.results.filter((element) => element.listing_type_id === 'gold_special').slice(0,4))
       setPromo(result.results.filter((element) => element.original_price !== null).slice(0,4))
-    //  console.log(result.results.filter((element) => element.original_price !== null))
+     // console.log(result.results.filter((element) => element.original_price !== null))
+    
     }
     
     getResult()
@@ -30,11 +31,11 @@ function Home() {
       <div className="container">
         <h2>Produtos em destaque</h2>
         {destaque ? destaque.map((element) => (
-          <div className="card">
-            <h2>{element.title}</h2>
-            <img src={element.thumbnail} alt="" />
-            <h3>R${element.price}</h3>
-          </div>
+            <div className="card">
+              <h2>{element.title}</h2>
+              <img src={element.thumbnail} alt="" />
+              <h3>R${element.price}</h3>
+            </div>
         )) : <p className="loading">loading</p>}
       </div>
       <section>
@@ -46,6 +47,7 @@ function Home() {
         {promo ? promo.map((element)=>(
           <div className="card">
             <h2>{element.title}</h2>
+            <s>{element.original_price}</s>
             <img src={element.thumbnail} alt="" />
             <h3>R${element.price}</h3>
           </div>
