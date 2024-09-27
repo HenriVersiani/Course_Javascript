@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react"
-import { fetchPhones } from "../../services/fetchApi"
+import { fetchPhones, fetchTech } from "../../services/fetchApi"
 import Header from "../../components/Header"
-import "./smartphone.css"
 
-export default function Smartphone(){
-
+export default function Technology(){
     const [data, setData] = useState(null)
-    const [promo,setPromo] = useState(null)
+    const [promo, setPromo] = useState(null)
 
     useEffect(()=>{
         async function getResult(){
-            const result = await fetchPhones()
+            const result = await fetchTech()
             setPromo(result.results.filter((element)=> element.original_price !== null))
             setData(result.results)
         }
@@ -19,9 +17,9 @@ export default function Smartphone(){
         
     },[]) 
 
-    return( 
-        <>
-          <Header/>
+    return(
+       <>
+        <Header/>
             <section>
                 Preenchimento de conteudo
             </section>
@@ -39,7 +37,6 @@ export default function Smartphone(){
                     )): <p className="loading">loading</p>} 
                 </div>
              </div>  
-
-        </>
+       </> 
     )
 }

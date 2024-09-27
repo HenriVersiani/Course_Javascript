@@ -16,3 +16,12 @@ export async function fetchPhones() {
 
     return result
 }
+
+export async function fetchTech() {
+    const endpoint = `https://api.mercadolibre.com/sites/MLB/search?q=informatica`
+
+    const response = await fetch(endpoint)
+    const result = await response.json()
+
+    return result
+}
