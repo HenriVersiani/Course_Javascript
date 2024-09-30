@@ -32,7 +32,7 @@ export default function Smartphone(){
                         
                             <div className="card">
                                 <img src={element.thumbnail} alt="Not found" />
-                                <h2>{element.title}</h2>
+                                <h2 className="nome-produto">{element.title}</h2>
                                 <h3>R${element.price}</h3>
                             </div>  
                         

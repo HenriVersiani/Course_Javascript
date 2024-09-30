@@ -1,3 +1,6 @@
+import search from '../components/Header'
+console.log(search)
+
 export async function fetchTvs() {
 
     const endpoint = `https://api.mercadolibre.com/sites/MLB/search?q=televisao`
@@ -9,7 +12,7 @@ export async function fetchTvs() {
 }
 
 export async function fetchPhones() {
-    const endpoint = `https://api.mercadolibre.com/sites/MLB/search?q=smartphones`
+    const endpoint = `https://api.mercadolibre.com/sites/MLB/search?q=pc`
 
     const response = await fetch(endpoint)
     const result = await response.json()

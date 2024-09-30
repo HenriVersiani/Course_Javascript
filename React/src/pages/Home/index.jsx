@@ -11,6 +11,7 @@ function Home() {
     const [destaque, setDestaque] = useState(null)
     const [promo, setPromo] = useState(null)
   
+    
     useEffect(() =>{
   
       async function getResult() {

@@ -1,5 +1,6 @@
 .card{
-    width: 250px;
+    width: 220px;
+    height: 340px;
     display: grid;
     justify-items: center;
     border: solid 2px black;
@@ -7,7 +8,7 @@
     padding: 10px;
 }
 img{
-    width: 200px;
+    width: 150px;
 }
 
 .content{
@@ -15,5 +16,5 @@ img{
     gap: 20px;
 }
 .nome-produto{
-font-size: 20px;
+    font-size: 20px;
 }
