@@ -24,13 +24,13 @@ export default function Technology(){
                 Preenchimento de conteudo
             </section>
             <div className="container">
-            <h2>SmartPhones</h2>
+            <h2>Tecnology</h2>
                 <div className="content">
                     {data ? data.map((element)=> (
                         
                             <div className="card">
-                                <h2>{element.title}</h2>
                                 <img src={element.thumbnail} alt="Not found" />
+                                <h2>{element.title}</h2>
                                 <h3>R${element.price}</h3>
                             </div>  
                         

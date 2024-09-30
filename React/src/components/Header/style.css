@@ -4,10 +4,22 @@
     border-bottom: black 2px solid;
 }
 
+.marca{
+    text-decoration: none;
+}
+
+.marca h1{
+color: black;
+}
+
 nav{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+}
+
+.navbar-search{
+    gap:10px;
 }
 
 .pesquisa{
@@ -15,4 +27,11 @@ nav{
     border-radius: 10px;
     width: 280px;
 }
+
+.bi-search{
+    font-size: 32px;
+}
+
+
+
 

@@ -25,3 +25,12 @@ export async function fetchTech() {
 
     return result
 }
+
+export async function fetchAppliances() {
+    const endpoint = `https://api.mercadolibre.com/sites/MLB/search?q=eletrodomestico`
+
+    const response = await fetch(endpoint)
+    const result = await response.json()
+
+    return result
+}
