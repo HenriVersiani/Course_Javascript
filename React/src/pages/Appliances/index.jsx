@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { fetchAppliances } from "../../services/fetchApi"
 import Header from "../../components/Header"
+import Loading from "../../components/Loading"
 
 export default function Appliances() {
 
@@ -39,7 +40,7 @@ export default function Appliances() {
                             <h3>R${element.price}</h3>
                         </div>
 
-                    )) : <p className="loading">loading</p>}
+                    )) : <Loading/>}
                 </div>
             </div>
         </>

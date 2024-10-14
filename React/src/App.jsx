@@ -6,7 +6,7 @@ import Smartphone from './pages/Smartphone'
 import Technology from './pages/Technology'
 import Appliances from './pages/Appliances'
 import NotFound from './pages/NotFound'
-
+import { Search } from './pages/Search'
 
 function App() {
 
@@ -17,6 +17,7 @@ function App() {
         <Route path="/technology" element={<Technology/>}/>
         <Route path="appliances" element={<Appliances/>}/>
         <Route path="/product" element={<h2>Produto</h2>}/>
+        <Route path="/search/:query" element={<h2><Search/></h2>}/>
 
         <Route path='/*' element={<NotFound/>}/>
     </Routes>

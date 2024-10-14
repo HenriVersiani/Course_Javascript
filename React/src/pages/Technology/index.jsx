@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { fetchPhones, fetchTech } from "../../services/fetchApi"
 import Header from "../../components/Header"
+import Loading from "../../components/Loading"
 
 export default function Technology(){
     const [data, setData] = useState(null)
@@ -34,7 +35,7 @@ export default function Technology(){
                                 <h3>R${element.price}</h3>
                             </div>  
                         
-                    )): <p className="loading">loading</p>} 
+                    )): <Loading/>} 
                 </div>
              </div>  
        </> 

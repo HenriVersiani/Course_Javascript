@@ -1,5 +1,16 @@
-import search from '../components/Header'
-console.log(search)
+export async function fetchSearch(params) {
+
+    const endpoint = `https://api.mercadolibre.com/sites/MLB/search?q=${params.query}`
+
+
+    console.log('endpoint',endpoint)
+
+    const response = await fetch(endpoint)
+    const result = await response.json()
+
+    return result
+}
+
 
 export async function fetchTvs() {
 

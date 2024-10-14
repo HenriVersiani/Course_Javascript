@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { fetchTvs } from "../../services/fetchApi"
 import Header from "../../components/Header"
 import './Home.css'
+import Loading from "../../components/Loading"
 
 
 
@@ -20,7 +21,7 @@ function Home() {
        // console.log(result.results.filter((element) => element.listing_type_id === 'gold_special').slice(0,4))
         setPromo(result.results.filter((element) => element.original_price !== null).slice(0,4))
        // console.log(result.results.filter((element) => element.original_price !== null))
-      
+        
       }
       
       getResult()
@@ -58,7 +59,7 @@ function Home() {
                 <s>{element.original_price}</s>
                 <h3>R${element.price}</h3>
               </div>
-            )): <p className="loading">loading</p>}
+            )): <Loading/>}
           </div>
     </div>
 

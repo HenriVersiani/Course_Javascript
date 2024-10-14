@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { fetchPhones } from "../../services/fetchApi"
 import Header from "../../components/Header"
 import "./smartphone.css"
+import Loading from "../../components/Loading"
 
 export default function Smartphone(){
 
@@ -36,7 +37,7 @@ export default function Smartphone(){
                                 <h3>R${element.price}</h3>
                             </div>  
                         
-                    )): <p className="loading">loading</p>} 
+                    )): <Loading/>} 
                 </div>
              </div>  
 
