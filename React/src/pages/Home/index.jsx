@@ -4,7 +4,7 @@ import { fetchTvs } from "../../services/fetchApi"
 import Header from "../../components/Header"
 import './Home.css'
 import Loading from "../../components/Loading"
-
+import slogan from "../../images/slogan.png"
 
 
 function Home() {
@@ -46,7 +46,7 @@ function Home() {
       </div>
 
       <section>
-        Preenchimento de conteudo
+        <img className="slogan" src={slogan} alt="slogan" />
       </section>
 
     <div className="container">

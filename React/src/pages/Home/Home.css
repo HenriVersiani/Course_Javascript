@@ -1,5 +1,5 @@
 .card{
-    width: 220px;
+    width: calc(20% - 100px) ;
     height: 340px;
     display: grid;
     justify-items: center;
@@ -9,12 +9,54 @@
 }
 img{
     width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.slogan{
+    width: 800px;
+    height: 300px;
+}
+
+section{
+    align-items: center;
+    display:flex;
+    padding: 40px;
 }
 
 .content{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;  
+    gap: 20px;       
 }
 .nome-produto{
     font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 25%; /* Cada card ocupa 25% da largura */
+        max-width: 25%;
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 33.33%; /* Cada card ocupa 33.33% da largura */
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 50%; /* Cada card ocupa 50% da largura */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        flex: 1 1 100%; /* Cada card ocupa 100% da largura */
+        max-width: 100%;
+    }
 }

@@ -48,14 +48,16 @@ export function Search() {
     return (
         <>
             <h1>Search</h1>
+            <div id="content">
             {data ? data.map((element) => (
-                <div className="card">
-                    <p>?</p>
-                    <img src={element.thumbnail} alt="" />
-                    <h2 className="nome-produto" >{element.title}</h2>
-                    <h3>R${element.price}</h3>
-                </div>
+                    <div className="card">
+                        <img src={element.thumbnail} alt="" />
+                        <h2 className="nome-produto" >{element.title}</h2>
+                        <h3>R${element.price}</h3>
+                    </div>
+                
             )).slice(0, value) : <Loading />}
+            </div>
             <button className="more-button" hidden={buttonValue} onClick={handleClick}>More...</button>
         </>
     )
